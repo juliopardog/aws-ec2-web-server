@@ -2,16 +2,17 @@
 
 ```mermaid
 graph TD
-    User[User Browser] --> ALB[Application Load Balancer]
 
+User[User Browser] --> ALB[Application Load Balancer]
+
+subgraph VPC Network
     ALB --> EC1[EC2 Web Server 1]
     ALB --> EC2[EC2 Web Server 2]
 
-    EC1 --> SG[Security Group]
-    EC2 --> SG
+    EC1 --> SG1[Security Group]
+    EC2 --> SG2[Security Group]
+end
 
-    SG --> VPC[VPC Network]
-
-    CW[CloudWatch Monitoring] --> EC1
-    CW --> EC2
+EC1 --> CW[CloudWatch Monitoring]
+EC2 --> CW
 ```
