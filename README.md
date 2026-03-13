@@ -5,8 +5,8 @@ AWS project deploying a highly available EC2 web server using VPC, Security Grou
 
 EC2 instance running with automated web server deployment.
 
-![EC2 Running](screenshots/ec2-instance.png)
+![EC2 Running](running instance.jpg)
 
 Example of the deployed web page served from the EC2 instance.
 
-![Web Server](screenshots/web-server-running.png)
+![Web Server](Julio's AWS Server.jpg)
